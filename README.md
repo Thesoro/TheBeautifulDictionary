@@ -1,28 +1,15 @@
-== README
+# The Beautiful Dictionary
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Origins
 
-Things you may want to cover:
+Dictionaries are broken
 
-* Ruby version
+- Most online dictionaries are ugly. 
+- They don't call attention to the words being displayed.
+- They don't allow for navigation outside your browser's back button.
 
-* System dependencies
+TheBeautifulDictionary is the proverbial thorn in Webster's  side.
 
-* Configuration
+## Team
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+FrontRowRails, an eclectic crew of Rails developers trying to infuse beauty and a sense of order into a jumbled, chaotic online world. 
