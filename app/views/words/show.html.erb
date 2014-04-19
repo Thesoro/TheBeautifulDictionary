@@ -1,0 +1,9 @@
+<h1><%= @word.spelling %></h1>
+
+<% @word.definitions.each do |definition| %>
+  <div id="<%= dom_id(definition) %>">
+    <span class="part_of_speech"><%= definition.part_of_speech %></span>
+    <span class="content"><%= definition.content %></span>
+  </div>
+<% end %>
+  
