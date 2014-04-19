@@ -3,7 +3,7 @@ water = Word.create(spelling: 'water')
 water.definitions.create(content: 'Some wet stuff that is made of Hydrogen and Oxygen. Found in the ocean and in clouds', part_of_speech: 'noun')
 water.definitions.create(content: 'To give a plant or animal some liquid ice.', part_of_speech: 'verb')
 
-ice = Word.craete(spelling: 'ice')
+ice = Word.create(spelling: 'ice')
 ice.definitions.create(content: 'Frozen water. Solid water.', part_of_speech: 'noun')
 ice.definitions.create(content: 'Mafia slang. To kill someone. To silence someone by means of killing them.', part_of_speech: 'verb')
 

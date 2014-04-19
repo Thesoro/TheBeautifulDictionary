@@ -1,9 +1,25 @@
-<h1><%= @word.spelling %></h1>
+<div class="row">
+  <div class="columns Word">
+    
+    <h1 class="spelling"><%= @word.spelling %></h1>
 
-<% @word.definitions.each do |definition| %>
-  <div id="<%= dom_id(definition) %>">
-    <span class="part_of_speech"><%= definition.part_of_speech %></span>
-    <span class="content"><%= definition.content %></span>
+
+    <ol id="definition_list">
+      <% @word.definitions.each do |definition| %>
+        <li>
+
+        <div id="<%= dom_id(definition) %>" class="Definition">
+          <span class="part_of_speech"><%= definition.part_of_speech %></span>
+          <span class="content"><%= definition.content %></span>
+        </div>
+
+        </li>
+      <% end %>
+    </ol>
+    
+
   </div>
-<% end %>
+</div>
+
+
   

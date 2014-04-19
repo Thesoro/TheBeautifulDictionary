@@ -1,0 +1,39 @@
+.Word {
+
+  .spelling {
+    font-size: 70px;
+  }
+
+  #definition_list {
+
+    margin-left: 40px;
+    list-style: decimal inside;
+
+    li {
+      margin-top: 10px;
+      font-size: 30px;
+    }
+
+
+    .Definition {
+      font-size: 20px;
+      max-width: 500px;
+
+      .part_of_speech {
+        padding-right: 10px;
+        color: #555;
+        font-family: 'courier';
+      }
+
+      .content {
+
+      }
+
+    }
+  }
+
+
+
+
+
+}
