@@ -1,7 +1,11 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  spelling: MyString
 
-two:
-  spelling: MyString
+
+:ablation:
+  :spelling: ablation
+  :definitions:
+  - :content: surgical removal of a body part or tissue
+    :part_of_speech: noun
+  - :content: the erosive process that reduces the size of glaciers
+    :part_of_speech: noun

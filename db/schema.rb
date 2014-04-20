@@ -18,7 +18,7 @@ ActiveRecord::Schema.define(version: 20140419195959) do
 
   create_table "definitions", force: true do |t|
     t.integer  "word_id"
-    t.string   "content"
+    t.text     "content"
     t.string   "part_of_speech"
     t.datetime "created_at"
     t.datetime "updated_at"
