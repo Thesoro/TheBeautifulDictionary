@@ -15,5 +15,9 @@
 /log/*.log
 /tmp
 
+# Rails 4
 secrets.yml
+
+# Mac hidden files
+.DS_Store
 
