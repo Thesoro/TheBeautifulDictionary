@@ -1,6 +1,6 @@
 BeautifulDictionary::Application.routes.draw do
 
-  resources :words, only: [:index, :show]
+  resources :words, only: [:show]
   root "static#home"
 
   # search by word

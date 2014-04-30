@@ -2,7 +2,7 @@ class StaticController < ApplicationController
 
   def home
     number = rand(Word.count)
-    @word = Word.find(number)
+    @word = Word.all.limit(1).offset(number).first
     redirect_to @word
   end
 

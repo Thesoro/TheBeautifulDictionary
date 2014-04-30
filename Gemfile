@@ -20,7 +20,6 @@ end
 
 group :test do
   gem 'minitest-rails-capybara', '~> 2.0.0.beta1'
-  gem 'turn'
 end
 
 group :doc do

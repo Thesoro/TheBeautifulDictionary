@@ -2,10 +2,9 @@
 
 
 
-:ablation:
-  :spelling: ablation
-  :definitions:
-  - :content: surgical removal of a body part or tissue
-    :part_of_speech: noun
-  - :content: the erosive process that reduces the size of glaciers
-    :part_of_speech: noun
+ablation:
+  spelling: ablation
+
+
+water:
+  spelling: water
