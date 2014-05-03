@@ -20,6 +20,7 @@ end
 
 group :test do
   gem 'minitest-rails-capybara'
+  gem 'minitest-reporters'
 end
 
 group :doc do

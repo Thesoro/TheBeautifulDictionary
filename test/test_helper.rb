@@ -4,7 +4,9 @@ require "rails/test_help"
 require "minitest/autorun"
 require "minitest/rails"
 require "minitest/rails/capybara"
+require "minitest/reporters"
 
+Minitest::Reporters.use!
 
 class ActiveSupport::TestCase
   ActiveRecord::Migration.check_pending!
