@@ -19,7 +19,7 @@ group :development do
 end
 
 group :test do
-  gem 'minitest-rails-capybara', '~> 2.0.0.beta1'
+  gem 'minitest-rails-capybara'
 end
 
 group :doc do
