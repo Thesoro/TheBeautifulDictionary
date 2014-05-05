@@ -10,10 +10,10 @@ water:
 
 # BEGIN WITH 'HOME'
 home:
-  spelling: home
+  spelling: hOme
 
 homerun:
-  spelling: homerun
+  spelling: hoMerun
 
 homely:
   spelling: homely
@@ -22,16 +22,16 @@ middle_home_dummy:
  spelling: xxxhomezzz
 
 end_home_dummy:
-  spelling: xxxzzz
+  spelling: xxxzzzhome
 
 
 
 # END WITH 'ITY'
 gravity:
-  spelling: gravity
+  spelling: gravITy
 
 brevity:
-  spelling: brevity
+  spelling: brevitY
 
 antiquity:
   spelling: antiquity
@@ -43,10 +43,10 @@ middle_ity_dummy:
 
 # CONTAIN PPE
 happen:
-  spelling: happen
+  spelling: hapPen
 
 supper:
-  spelling: supper
+  spelling: suPPer
 
 chippper:
-  spelling: chipper
+  spelling: chipPEr
