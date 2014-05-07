@@ -3,17 +3,17 @@ class Api::V1::WordSearchController < ApplicationController
   before_action :check_blank
 
   def starting_with
-    @words = Word.starting_with spelling
+    @words = WordSearcher.starting_with spelling
     render json: { words: @words }
   end
 
   def ending_with
-    @words = Word.ending_with spelling
+    @words = WordSearcher.ending_with spelling
     render json: { words: @words }
   end
 
   def containing
-    @words = Word.containing spelling
+    @words = WordSearcher.containing spelling
     render json: { words: @words }
   end
 
