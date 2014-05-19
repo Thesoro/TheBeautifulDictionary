@@ -21,3 +21,6 @@ secrets.yml
 # Mac hidden files
 .DS_Store
 
+# Mongo
+/db/data
+

@@ -9,8 +9,6 @@ require "minitest/reporters"
 Minitest::Reporters.use!
 
 class ActiveSupport::TestCase
-  ActiveRecord::Migration.check_pending!
   include Rails.application.routes.url_helpers
   include Capybara::DSL
-  fixtures :all
 end
