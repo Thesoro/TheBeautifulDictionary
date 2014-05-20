@@ -13,9 +13,7 @@ class WordSearcher
   end
 
   def self.search_spelling regex
-    Word.any_of(spelling: regex)
+    Word.where(spelling: regex)
   end
-
-  
 
 end
