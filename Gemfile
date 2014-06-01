@@ -13,6 +13,8 @@ gem 'puma'
 gem 'sass-rails', '~> 4.0.2'
 gem 'turbolinks'
 gem 'uglifier', '>= 1.3.0'
+gem 'wordnet'
+gem 'wordnet-defaultdb'
 
 gem 'mongoid', '~> 4.0.0.beta1', github: 'mongoid/mongoid'
 gem 'bson_ext'
