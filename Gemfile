@@ -13,6 +13,8 @@ gem 'puma'
 gem 'sass-rails', '~> 4.0.2'
 gem 'turbolinks'
 gem 'uglifier', '>= 1.3.0'
+gem 'omniauth-twitter'
+gem 'figaro'
 
 gem 'mongoid', '~> 4.0.0.beta1', github: 'mongoid/mongoid'
 gem 'bson_ext'
@@ -20,6 +22,7 @@ gem 'bson_ext'
 
 group :development do
   gem 'spring'
+  gem 'launchy'
 end
 
 group :test do
