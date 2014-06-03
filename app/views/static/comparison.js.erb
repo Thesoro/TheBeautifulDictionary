@@ -5,3 +5,6 @@ $("#buttonright").click(function(){
 $('#rightword').html('<%= j render(@wordright) %>');
 });
 
+$("#search").blur(function(){
+  $('#rightword').html('TESTO');
+});
