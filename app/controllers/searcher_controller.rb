@@ -2,8 +2,9 @@ class SearcherController < ApplicationController
 
   def spelling
     term = params[:spelling]
-    @candidates = Word.where("spelling like ?", "%#{term}%")
-    render json: @candidates || []
+    @candidates = WordSearcher.containing term
+    @word = @candidates.first
+    render template: 'words/show'
   end
 
 end
