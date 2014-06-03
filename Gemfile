@@ -20,7 +20,7 @@ gem 'wordnet-defaultdb'
 
 gem 'mongoid', '~> 4.0.0.beta1', github: 'mongoid/mongoid'
 gem 'bson_ext'
-
+gem 'sidekiq'
 
 group :development do
   gem 'spring'

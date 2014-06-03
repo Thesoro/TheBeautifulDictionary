@@ -1,15 +1,22 @@
 <%# navigation styled for Zurb Foundation 5 %>
 <nav class="top-bar" data-topbar>
   <ul class="title-area">
-    <li class="name"><%= link_to 'Random Word', root_path %></li>
+    <li class="name"><%= link_to 'The Beautiful Dictionary', root_path %></li>
     <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
   </ul>
   <div class="top-bar-section">
     <ul class="right">
-      <li><%= link_to "Word Search" %></li>
+      <li><%= link_to "Contact Us" %></li>
       <li class="divider"></li>
-      <li><%= link_to "Request A Word" %></li>
-      <li class="divider"></li>
+      <li><% if current_user.present? %></li>
+        <li><%= link_to "Sign Out", signout_path %></li>
+          <% else %>
+            <li class="divider"></li>
+            <li><%= link_to "Sign in with Twitter", "/auth/twitter" %></li>
+          <% end %>
+        </ul>
     </ul>
   </div>
 </nav>
+
+
