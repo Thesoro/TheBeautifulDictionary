@@ -16,7 +16,9 @@ BeautifulDictionary::Application.routes.draw do
     end
   end
 
-
+  match 'auth/twitter/callback', to: 'sessions#create', via: [:get]
+  match 'auth/failure', to: redirect('/'), via: [:get]
+  match 'signout', to: 'sessions#destroy', as: 'signout', via: [:get]
 
 
 end

@@ -24,3 +24,6 @@ secrets.yml
 # Mongo
 /db/data
 
+
+# Ignore application configuration
+/config/application.yml

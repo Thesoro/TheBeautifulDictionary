@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '~> 4.1.0'
+gem 'rails', '~> 4'
 
 
 gem 'coffee-rails', '~> 4.0.0'
@@ -13,6 +13,8 @@ gem 'puma'
 gem 'sass-rails', '~> 4.0.2'
 gem 'turbolinks'
 gem 'uglifier', '>= 1.3.0'
+gem 'omniauth-twitter'
+gem 'figaro'
 gem 'wordnet'
 gem 'wordnet-defaultdb'
 
@@ -22,6 +24,7 @@ gem 'bson_ext'
 
 group :development do
   gem 'spring'
+  gem 'launchy'
 end
 
 group :test do
