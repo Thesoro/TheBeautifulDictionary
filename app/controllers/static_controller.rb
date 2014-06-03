@@ -9,7 +9,6 @@ class StaticController < ApplicationController
   def random
     number = rand(Word.count)
     @word = Word.all.limit(1).offset(number).first
-    render @word
   end
 
 end
