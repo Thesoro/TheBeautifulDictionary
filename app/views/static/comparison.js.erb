@@ -1,2 +1,7 @@
-$('#leftword').replaceWith('<%= j render(@wordleft) %>');
-$('#rightword').replaceWith('<%= j render(@wordright) %>');
+$("#buttonleft").click(function(){
+  $('#leftword').html('<%= j render(@wordleft) %>');
+});
+$("#buttonright").click(function(){
+$('#rightword').html('<%= j render(@wordright) %>');
+});
+
