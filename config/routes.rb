@@ -2,6 +2,8 @@ BeautifulDictionary::Application.routes.draw do
 
   resources :words, only: [:show]
   root "static#home"
+  get "random", to: "static#random"
+
 
   # search by word
   get 'w/:spelling', to: 'searcher#spelling'
@@ -17,5 +19,6 @@ BeautifulDictionary::Application.routes.draw do
   match 'auth/twitter/callback', to: 'sessions#create', via: [:get]
   match 'auth/failure', to: redirect('/'), via: [:get]
   match 'signout', to: 'sessions#destroy', as: 'signout', via: [:get]
+
 
 end
