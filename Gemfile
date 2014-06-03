@@ -25,6 +25,7 @@ gem 'sidekiq'
 group :development do
   gem 'spring'
   gem 'launchy'
+  gem 'letter_opener'
 end
 
 group :test do
