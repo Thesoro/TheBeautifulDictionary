@@ -6,9 +6,8 @@
 
     <title><%= content_for?(:title) ? yield(:title) : "foundation-rails" %></title>
 
-    <%= stylesheet_link_tag    "application" %>
-    <%= javascript_include_tag "application" %>
-    <%= javascript_include_tag "vendor/modernizr" %>
+    <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+    <%= javascript_include_tag "vendor/modernizr", "data-turbolinks-track" => true %>
     <%= csrf_meta_tags %>
   </head>
 
@@ -19,7 +18,11 @@
     <% else %>
       <%= link_to "Sign in with Twitter", "/auth/twitter" %>
     <% end %>
-    <%= yield %>
+    <header>
+      <%= render 'layouts/navigation' %>
+    </header>
+    <main role="main">
+       <%= yield %>
+    </main>
   </body>
 
-</html>
