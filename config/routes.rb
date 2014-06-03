@@ -2,6 +2,8 @@ BeautifulDictionary::Application.routes.draw do
 
   resources :words, only: [:show]
   root "static#home"
+  get "random", to: "static#random"
+
 
   # search by word
   get 'w/:spelling', to: 'searcher#spelling'
@@ -13,6 +15,7 @@ BeautifulDictionary::Application.routes.draw do
       get '/words/containing',    to: 'word_search#containing'
     end
   end
+
 
 
 
